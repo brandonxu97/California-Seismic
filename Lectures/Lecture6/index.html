@@ -111,7 +111,7 @@
 
 ASCE 7-16 table 12.2-1
 
-    <img src = "table12.2-1ASCE7.png" alt="table12.2-1_ASCE7">
+    <img src = "table12.2-1ASCE7-16.png" alt="table12.2-1_ASCE7">
 
 <p>The concept of ductility is very important in seismic engineering, but for the Seismic Exam you will only be expected to know how to find the values in the ASCE 7 tables, and understand that a larger R value means more ductility and a greater reduction to seismic base shear. Further understanding would be more important for a graduate level degree in structural engineering.</p>
 
@@ -126,13 +126,13 @@ ASCE 7-16 table 12.2-1
  
 <p>To understand this topic in more depth, let’s do a quick recap on stiffness as it relates to deflection. Stiffness comes from the geometry and material properties. Below is the equation for the deflection of a cantilevered beam.</p>
 
-<img src = "deflectedCantileveredBeam.png" alt="deflected_Cantilevered_Beam">
+<img src = "cantileveredBeamDeflected.png" alt = "Deflected_Catilevered_Beam">
 
 
 <p>Deflection = PL<sup>3</sup>/3EI = (Load) (Length) / (Material Stiffness) (Geometric Stiffness)</p>
 
 <p>As shown, the deflection decreases when the material/geometric stiffness increases. As the load increases, the deflection increases linearly at the same rate, in the linear elastic region, up until a certain “point” - the yield stress. A graphic representation is shown below. Any load that is applied after the yield stress results in plastic (non-linear) deflection of the beam. If more loads are applied to the beam, it will eventually break. The deflection in the plastic region increases more rapidly because the stiffness is decreased, resulting in permanent deformation. Once the loading is removed, the beam will be permanently deformed! This is not a good thing for buildings because the damaged building will not be safe for people to use. </p>
-<img src = "deformationForceCurve.png" alt="deformation_Force_Curve"> 
+<img src = "deformationForceVsCurve.png" alt="deformation_Force_Curve"> 
 
 <p>Here is a visual explanation of elastic and inelastic response: <a href="https://www.youtube.com/watch?v=frGL1jTnDsg">https://www.youtube.com/watch?v=frGL1jTnDsg</a></p>
 
@@ -149,7 +149,7 @@ ASCE 7-16 table 12.2-1
 
 
 <a class="imgLink"  href="https://www.sbcmag.info/article/2014/seismic-design-coefficients-how-they-are-determined-light-frame-components"><p>Image via concrete coalition</p> </a>
-<img src = "deformationCurve.png" alt="deformation_Curve"> 
+<img src = "inelasticForceDeformationCurve.png" alt = "Inelastic_Force_Deformation_Curve">
     
 
 <p>The image above shows the anticipated behavior of a lateral system subjected to base shear, V. Notice that from origin to S, the curve is linear, while the remaining is non-linear. The adjustments of R and the deflection amplification factor, C<sub>d</sub>, are used to account for the true behavior of the system without requiring the engineer to have to deal with the curved portion of the graph. The C<sub>d</sub> factor is used to account for the actual greatest potential (extra) deflection that a system would experience during the non-linear portion of the graph. From the graph, the elastic seismic base shear force, V<sub>e</sub>, is divided by the R factor to provide the design seismic shear force, V<sub>s</sub>. This shows that larger values of the R factor will give a larger reduction to the overall seismic forces. </p>
@@ -163,7 +163,7 @@ Note: This graph is also given in section C12 of ASCE 7-16 with slightly more de
 
 <p>There are other impacts from allowing a building lateral system to perform in the non-linear range. When a system enters the non-linear range, the period of the structure increases, which will typically lower the design base shear. On the response spectrum below, you can see that accelerations get lower as the period increases in certain regions. As the period of a system increases, the critical damping ratio (&#955;) may increase as well. &#955; is a reference level that denotes the least amount of damping required to revert a system back to its original position (without any continuing vibrations that result). &#955; is typically taken as 5% for most systems. </p>
 
-<img src = "dampingRatiosResponseSpectrum.png" alt="damping_Ratios_Response_Spectrum">
+<img src = "dampingRatioResponseSpectrum.png" alt="damping_Ratio_Response_Spectrum">
 
 <p>The R value scales down seismic forces to account for the success of the lateral system in taking load beyond the linear-elastic region. This is due to the increase of the critical damping ratio in the non-linear range, upon which the seismic energy is further absorbed, resulting in a reduction of the seismic forces. All of this means that we can safely lower the seismic design forces for analysis based on the ductility.</p>
 
@@ -184,7 +184,7 @@ Note: This graph is also given in section C12 of ASCE 7-16 with slightly more de
 
 
 <a class="imgLink"  href="https://www.globalspec.com/reference/70269/203279/chapter-11-lateral-drift-and-vertical-deflections"><p>Image via Engineering 360</p> </a>    
-<img src = "storyDriftDueToLateralLoads.jpg" alt="storyDrift_Due_To_LateralLoads"> 
+<img src = "storyDriftDueToLateralLoad.jpg" alt="storyDrift_Due_To_LateralLoad"> 
 
 <p>For now, just understand what drift looks like. Specific calculations will be explained in later lectures. Note that C<sub>d</sub> can be found in Sections 12.8.6, 12.8.7 and, 12.9.2 of ASCE 7-16. </p>
 
@@ -208,7 +208,7 @@ Note: This graph is also given in section C12 of ASCE 7-16 with slightly more de
 
 <a class="imgLink"  href="https://www.woodworks.org/wp-content/uploads/2014-SE-WSF-Malone-Offset-Diaphragms-and-Shear-Walls-Part2.pdf"><p>Image via WoodWorks</p> </a>
 
-<img src = "collectorElements.png" alt="collector_Elements">
+<img src = "collectorElement.png" alt="collector_Elements">
 
 <p>In this figure, the elements requiring overstrength are indicated by the red lines. The collectors are resisting the vertical component of seismic load to support the structure. While they transfer lateral loads, they are not quite the LRFS associated with the R value for the structure. Since these collectors do not have the same level of ductility as the LRFS, we don’t rely on their ability to perform well in the nonlinear region. To keep the collectors elastic, we should design them to handle the max anticipated force from the shear walls, which is the design level shear wall force multiplied by &#937;. </p>
 
@@ -217,7 +217,7 @@ Note: This graph is also given in section C12 of ASCE 7-16 with slightly more de
 
 <a class ="imgLink" href="https://www.woodworks.org/wp-content/uploads/2014-SE-WSF-Malone-Offset-Diaphragms-and-Shear-Walls-Part2.pdf"><p>Image via WoodWorks</p> </a>
 
-<img src = "discontinuousWalls.png" alt="discontinuous_Walls">
+<img src = "discontinuousWall.png" alt="discontinuous_Walls">
 
 <p>Similarly in this figure, we can see how an earthquake would affect the lateral system and the connection at the shear wall must be designed with an overstrength factor.</p> 
 
